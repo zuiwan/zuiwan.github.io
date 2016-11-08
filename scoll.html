@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>gundong</title>
+</head>
+<style>
+	<span style="font-size:14px;">#wrap{overflow: hidden;width: 100%;}  
+#main{top: 0;position: relative;}  
+.content{width: 100%;margin: 0;height: 100%;}  
+.num1{background: #e8e8e8;}  
+.num2{background: pink;}  
+.num3{background: yellow;}  
+.num4{background: orange;} 
+</style>
+<body>
+<span style="font-size:18px;"><span style="font-size:14px;"><div id="wrap">  
+    <div id="main" style="top: 0;">  
+        <div class="content num1">  
+            <img src="images/pic1.jpg" width="100%" height="100%">  
+        </div>  
+        <div class="content num2">  
+            <img src="images/pic2.jpg" width="100%" height="100%">  
+        </div>  
+        <div class="content num3">  
+            <img src="images/pic3.jpg" width="100%" height="100%">  
+        </div>  
+        <div class="content num4">  
+            <img src="images/pic3.jpg" width="100%" height="100%">  
+        </div>  
+    </div>  
+</div>
+</body>
+<script>
+	 var wrap = document.getElementById("wrap");  
+      
+    var divHeight = window.innerHeight;  
+      
+    wrap.style.height = divHeight + "px";  
+  
+    var content = $(".content");//懒得写获取类的原生js代码了，直接用了jquery，=。=  
+  
+    content.height(divHeight);  
+  
+    var startTime = 0, //开始翻屏时间  
+        endTime = 0,  
+        now = 0;     
+  
+    if ((navigator.userAgent.toLowerCase().indexOf("firefox")!=-1)){  
+        //for firefox;  
+        document.addEventListener("DOMMouseScroll",scrollFun,false);  
+      
+    }  
+    else if (document.addEventListener) {  
+      
+        document.addEventListener("mousewheel",scrollFun,false);  
+      
+    }  
+    else if (document.attachEvent) {  
+      
+        document.attachEvent("onmousewheel",scrollFun);  
+      
+    }  
+    else{  
+      
+        document.onmousewheel = scrollFun;  
+      
+    }  
+  
+    //滚动事件处理函数  
+    function scrollFun(event){  
+  
+            startTime = new Date().getTime();  
+  
+            var delta = event.detail || (-event.wheelDelta);  
+  
+            if ((endTime - startTime) < -1000) {  
+                //1秒内执行一次翻页  
+  
+                if (delta > 0 && parseInt(main.style.top) > -divHeight * ( content.length - 1)) { //向下翻页  
+  
+                    now += divHeight ;  
+  
+                    turnPage(now);  
+  
+                }   
+  
+                if (delta < 0 && parseInt(main.style.top) < 0) { //向上翻页  
+  
+                    now -= divHeight ;  
+  
+                    turnPage(now);  
+  
+                }  
+  
+                endTime = new Date().getTime();  
+  
+            }  
+            else{  
+  
+                event.preventDefault();  
+  
+            }  
+              
+    }  
+  
+    //翻页函数  
+    function turnPage(now){  
+          
+        $("#main").animate({top:(-now+'px')},1000);  
+    }  
+</script>
+</html>

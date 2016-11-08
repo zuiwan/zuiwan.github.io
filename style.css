@@ -1,0 +1,350 @@
+h1,h2,h3,h4,h5,h6,ul,body,p,hr {
+	margin: 0;
+	padding: 0;
+}
+html,body {
+	width: 100%;
+	min-width: 1024px;
+	font-family: "微软雅黑";
+	height: 100%;
+}
+li {
+	list-style-type: none;
+}
+a {
+	text-decoration:none;
+}
+
+/*箭头*/
+	#arrow {
+		width: 40px;
+		height: 45px;
+		background-color: #F9F9F9;
+		position: fixed;
+		bottom: 5px;
+		right: 10px;
+		overflow: hidden;
+		opacity: 0.3;
+	}
+	#arrow span {
+		border-left: 15px solid #F9F9F9;
+		border-right: 15px solid #F9F9F9;
+		border-bottom: 18px solid #1C4594;
+		position: relative;
+		top: -18px;
+		left: 5px;
+	}
+	#arrow p {
+		width: 0;
+		height: 20px;
+		border-left: 8px solid #1C4594;
+		border-right: 8px solid #1C4594;
+		position: relative;
+		left: 12px;
+	}
+
+/*header*/
+	header {
+		height: 60px;
+		text-align: center;
+		line-height: 60px;
+		background-color: #0089c2;
+	}
+	#logo {
+		width: 205px;
+		float: left;
+	}
+	#logo img {
+		width: 100%;
+	}
+	nav {
+		width: 55%;
+		float: left;
+		margin-left: 10%;
+		font-size: 18px;
+		font-weight: bold;
+		color: #fff;
+	}
+	nav li a{
+		width: 17%;
+		float: left;
+		margin: 0 3%;
+		color: #fff;
+	}
+	nav li a:hover {
+		color:#0089c2;
+		background-color: #fff;
+		font-size: 20px;
+		transition: background-color 0.5s,font-size 2s;
+	}
+
+/*轮播图*/
+	#carousel {
+		height: calc(100% - 60px);
+		background: url("images/pic1.jpg") no-repeat;
+		background-size: 100%;
+		margin-top: 2px;
+		box-shadow: 0 -2px 5px #0089C2;
+	}
+	#cover {
+		width: 100%;
+		height: 100%;
+		background-color: black;
+		opacity: 0.5;
+	}
+
+/*团队介绍*/
+	#teamIntro {
+		height: 100%;
+		
+		cursor: default;
+	}
+	h2 {
+		font-size: 20px;
+		margin: 0 auto;
+		width: 45%;
+		text-align: center;
+		cursor: default;
+	}
+	#teamIntro h2 hr {
+		margin-top: 30px;
+	}
+	#teamIntro ul {
+		width: 90%;
+		margin: 50px auto 0 auto;
+	}
+	#teamIntro ul li {
+		width: 25%;
+		height: 500px;
+		float: left;
+		text-align: center;
+	}
+	#teamIntro ul li:hover {
+		background-color: rgb(0,137,194);
+		transition: background-color 0.5s;
+	}
+	#teamIntro ul li:hover img {
+		position: relative;
+		top: -15px;
+	}
+	#teamIntro ul li img {
+		transform:translate(0,50px) rotate(-45deg);
+	}
+	#teamIntro ul li p {
+		margin-top: 100px;
+	}
+
+/*产品介绍*/
+	#productIntro {
+		height: 100%;
+		background-color: rgb(0,137,194);
+		color: #fff;
+		cursor: default;
+	}
+	#prod-main {
+		width: 1000px;
+		height: 500px;
+		box-sizing: border-box;
+		padding: 0 150px 0 100px;
+		margin: 0 auto;
+	}
+	#left-font {
+		width: 300px;
+		text-align: center;
+		padding-top: 100px;
+	}
+	#left-font h1 {
+		font-weight: normal;
+		margin-bottom: 8px;
+	}
+	#left-font span hr{
+		width: 38px;
+		border: 0;
+		border-top: 7px solid #fff;
+		margin: 7px auto;
+	}
+	.imgSty {
+		width: 100px;
+		height: 100px;
+		transform: rotate(-45deg);
+		float: right;
+		position: relative;
+		background-color: #fff;
+		background-repeat: no-repeat;
+		background-size: 70%;
+		background-position: 28px 3px;
+	}
+	.imgSty:hover {
+		background-color: rgb(40,40,46);
+	}
+	.imgSty p {
+		color: rgb(77,173,212);
+		font-size: 14px;
+		transform: rotate(45deg);
+		position: relative;
+		top: 65px;
+	}
+	.imgSty:hover p {
+		color: #fff;
+	}
+	#productIntro div:nth-child(2) {
+		background-image: url("images/webapp.png");
+		left: -35px;
+		top: 80px;
+	}
+	#productIntro div:nth-child(3){
+		background-color: rgb(77,173,212);
+		left: -19px;
+	}
+	#productIntro div:nth-child(4) {
+		background-image: url("images/hustgate.png");
+		top: -80px;
+	}
+	#productIntro div:nth-child(5) {
+		background-color: rgb(77,173,212);
+		left: 19px;
+	}
+	#productIntro div:nth-child(6) {
+		background-image: url("images/xiaoyuanhao.png");
+		left: 200px;
+		top: 80px;
+	}
+	#productIntro div:nth-child(7) {
+		background-image: url("images/zuiwan.png");
+		left: 140px;
+		top: 80px;
+	}
+
+
+/*醉晚历程*/
+	#course {
+		height: calc(100% - 190px);
+		padding-top: 60px;
+		cursor: default;
+	}
+	#headline {
+		width: 60%;
+		margin: 0 auto;
+	}
+	#headline hr {
+		width: 35%;
+		color: #0089c2;
+		float: left;
+	}
+	#headline span {
+		font-family: "楷体";
+		width: 30%;
+		float: left;
+		text-align: center;
+		font-size: 17px;
+		line-height: 1px;
+	}
+	#headline span:first-letter {
+		font-size: 28px;
+	}
+	#headline span i {
+		height: 20px;
+		font-style: normal;
+		font-size:24px;
+	}
+	#headline span b {
+		font-weight: normal;
+		font-size:10px;
+		color: #0089c2;
+		position: relative;
+		top: 10px;
+	}
+
+	#course-main {
+		width: 1000px;
+		height: 410px;
+		margin: 50px auto 0 auto;
+	}
+	#course-main li {
+		float: left;
+		position: relative;
+	}
+	#course-main li p{
+		text-align:center;
+		color: #fff;
+		background-color: rgb(0,137,194);
+		border-radius: 100%;
+	}
+	#course-main li:nth-child(1) {
+		left: 50px;
+		top: 50px;
+	}
+	#course-main li:nth-child(1) p {
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		left: 50px;
+	}
+	#course-main li:nth-child(2) {
+		left: 110px;
+	}
+	#course-main li:nth-child(2) p {
+		width: 60px;
+		height: 60px;
+		line-height: 60px;
+	}
+	#course-main li:nth-child(3) {
+		left: 175px;
+		top: 40px;
+	}
+	#course-main li:nth-child(3) p {
+		width: 70px;
+		height: 70px;
+		line-height: 70px;
+	}
+	#course-main li:nth-child(4) {
+		left: 260px;
+	}
+	#course-main li:nth-child(4) p {
+		width: 80px;
+		height: 80px;
+		line-height: 80px;
+	}
+	#course-main li:nth-child(5) {
+		left: 350px;
+		top: 30px;
+	}
+	#course-main li:nth-child(5) p {
+		width: 90px;
+		height: 90px;
+		line-height: 90px;
+	}
+	#course-main li:nth-child(6) {
+		left: 450px;
+	}
+	#course-main li:nth-child(6) p {
+		width: 100px;
+		height: 100px;
+		line-height: 100px;
+	}
+
+/*footer*/
+	footer {
+		height: 130px;
+		font-size: 14px;
+		background-color: rgb(235,233,233);
+		text-align: center;
+		padding-top: 20px;
+	}
+	#foot {
+		width: 40%;
+		height: 100%;
+		margin-left: 16%;
+		cursor: default;
+	}
+	#foot li ul{
+		width: 25%;
+		float: left;
+		color: rgb(74,74,74);
+	}
+	#foot li ul li:first-child {
+		margin-bottom: 8px;
+		font-size: 16px;
+		font-weight: bold;
+		color: #000;
+	}
