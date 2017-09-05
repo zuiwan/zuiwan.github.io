@@ -1,0 +1,121 @@
+.container-bg {
+  background-image: url('./imgs/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "MicrosoftYaHei";
+  padding-bottom: 25px;
+  color: white;
+}
+
+/* home */
+.head-title {
+  width: 220px;
+  margin: 15px auto 30px auto;
+  display: block;
+}
+.btn-submit {
+  color: #5DCBDA;
+  background-color: white;
+  width: 120px;
+  display: block;
+  margin: 0 auto;
+  font-size: 22px;
+  line-height: 30px;
+}
+img.person {
+  width: 80px;
+  position: absolute;
+  left: 75%;
+  top: 57px;
+}
+.error {
+  color: red;
+  font-weight: bold;
+  font-size: 16px;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* radiolist */
+.radiolist-wrapper {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  /* background-image: url('./imgs/listbg.png');
+  background-size: 115% 110%;
+  background-position: -30px -3px;
+  background-repeat: no-repeat; */
+  padding: 5px 10px 5px 15px;
+  margin-bottom: 20px;
+}
+.radiolist-title {
+  color: #EC840B;
+  font-size: 20px;
+  font-style: italic;
+}
+.radio {
+  padding-left: 10px;
+  font-size: 18px;
+  color: #666666;
+}
+
+/* footer */
+.footer {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+/* result */
+ul {
+  padding: 0;
+  font-size: 22px;
+}
+li.list-item {
+  list-style-type: none;
+  padding-left: 20px;
+  line-height: 45px;
+  margin-bottom: 15px;
+}
+.list-item > i {
+  position: relative;
+  top: 0;
+  left: -10px;
+  display: inline-block;
+  width: 30px;
+  line-height: 30px;
+  font-style: normal;
+  text-align: center;
+  background-color: rgba(249, 175, 45, 1);
+  vertical-align: baseline;
+}
+.list-item > div {
+  float: right;
+  line-height: 1.7;
+}
+.list-item > a {
+  color: white;
+}
+.tips {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 16px;
+  margin-bottom: 90px;
+}
+
+.cont {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('./imgs/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.margin-item {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
