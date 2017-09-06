@@ -1,5 +1,5 @@
 .container-bg {
-  background-image: url('./imgs/bg.png');
+  background-image: url('./img/bg.png');
   background-size: cover;
   background-repeat: no-repeat;
   font-family: "MicrosoftYaHei";
@@ -41,10 +41,6 @@ img.person {
 .radiolist-wrapper {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 20px;
-  /* background-image: url('./imgs/listbg.png');
-  background-size: 115% 110%;
-  background-position: -30px -3px;
-  background-repeat: no-repeat; */
   padding: 5px 10px 5px 15px;
   margin-bottom: 20px;
 }
@@ -110,7 +106,7 @@ li.list-item {
   top: 0;
   bottom: 0;
   left: 0;
-  background-image: url('./imgs/bg.png');
+  background-image: url('./img/bg.png');
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
